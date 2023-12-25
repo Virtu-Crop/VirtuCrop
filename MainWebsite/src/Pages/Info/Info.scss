@@ -1,0 +1,35 @@
+.info {
+    height: auto;
+    min-height: 100dvh;
+    background-color: #f8f8f8;
+    color: #2a2a2a;
+    padding: 2px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("../../assets/info.jpg");
+    background-attachment: local;
+    .heading {
+      width: 100%;
+      font-size: 50px;
+      text-align: right;
+      color: #004aad;
+      padding-right: 50px;
+      font-weight: 900;
+    }
+  
+    .flex {
+      width: 100%;
+      height: auto;
+      .left {
+        text-align: justify;
+      //   height: auto;
+      //   z-index: 3;
+      }
+  
+      .right {
+          text-align: justify;
+     }
+    }
+  }
+  

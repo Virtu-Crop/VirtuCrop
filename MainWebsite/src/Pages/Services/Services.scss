@@ -1,0 +1,38 @@
+.services {
+    height: auto;
+    min-height: 100dvh;
+    background-color: #f7f9f0;
+    color: #2a2a2a;
+    padding: 2px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("../../assets/services.png");
+    background-attachment: local;
+    .heading {
+      width: 100%;
+      padding-right: 50px;
+      font-size: 50px;
+      text-align: right;
+      color: #004aad;
+      font-weight: 900;
+    }
+  
+    .flex {
+      width: 100%;
+      height: auto;
+      .left {
+        color: #f8f8f8;
+        text-align: justify;
+      //   height: auto;
+      //   z-index: 3;
+      }
+  
+      .right {
+        color: #f8f8f8;
+        text-align: justify;
+     }
+    }
+  }
+  
+  

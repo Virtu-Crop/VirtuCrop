@@ -1,7 +1,7 @@
 .about{
     height: 100vh;
     width: 100vw;
-    position: fixed;
+    // position:inherit;
     background-color:rgb(0, 0, 0) ;
     .heading{
         color: #fff;
@@ -10,7 +10,7 @@
         font-size: 65px;
         letter-spacing: 1px;
         line-height: 53px;
-        font-weight: 600;
+        font-weight: 900;
     .span{
         color: #0047ab;
     }

@@ -1,36 +1,9 @@
 .home{
-        
-        position: fixed;
-        font-family: 'Nova Square', sans-serif;
-        font-family: 'Poppins', sans-serif;
-        font-family: 'Roboto', sans-serif;
-        width: 100vw;
-        height: 100vh;
-        .logo{
-            margin-left: 150px;
-            width: 280px;
-            height: 100px;
-            margin-top: 140px;
-        }
-        .heading{
-            // font-size: 60px;
-            margin-left: 150px;
-            margin-top: 70px;
-            color:#1a1a1a;
-            font-size: 65px;
-            letter-spacing: 1px;
-            line-height: 53px;
-            font-weight: 700;
+    padding:0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    .container{
 
-            .p2{ margin-left: 70px;
-                margin-top: 20px;
-
-            }
-            
-
-            .span{
-                color:#0047AB;
-            }
-        }
     }
-
+}

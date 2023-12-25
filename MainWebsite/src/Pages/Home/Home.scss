@@ -1,0 +1,33 @@
+.home {
+  height: auto;
+  min-height: 100dvh;
+  background-color: #f8f8f8;
+  color: #2a2a2a;
+  text-align: justify;
+  padding: 2px;
+  height: 0 auto;
+  z-index: 1;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-image: url("../../assets/home.jpg");
+  background-attachment: local;
+
+  .left {
+    z-index: 1;
+    width: 50%;
+    padding-top: 15%;
+    font-weight: 900;
+    font-size: 53px;
+    span {
+      color: #004aad;
+    }
+    .har {
+      padding-left: 2%;
+    }
+  }
+
+  .right {
+    width: 50%;
+  }
+}

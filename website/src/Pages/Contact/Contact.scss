@@ -1,15 +1,41 @@
 .contact{
-        background-color: #0047AB;
-        height: 100vh;
-        width: 100vw;
-        position:fixed;
-    .heading{
-        margin-left: 600px;
-        margin-top: 20px;
-        font-size: 65px;
-        letter-spacing: 1px;
-        line-height: 53px;
-        font-weight: 500;
-        color: #fff;
-    }
-}
+    background-color:  #0047AB;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+.contact-page {
+    color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    // color: #fff;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }}
