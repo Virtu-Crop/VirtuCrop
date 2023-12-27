@@ -1,27 +1,49 @@
-import React from 'react';
+import {React} from 'react';
 import './Navigation.scss';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/navbar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars,faXmark} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+
 
 const Navigation = () => {
+  
+  function showSideBar(){
+    const side = document.querySelector('.sidebar');
+    side.style.display='flex';
+  }
+  function hideSideBar(){
+    const side = document.querySelector('.sidebar');
+    side.style.display='none';
+  }
+  
   return (
-    <Navbar expand="lg" className="navigation flex">
-      <Container>
-        <Navbar.Brand href="/"><img src="./src/assets/logo2.png" alt="logo" /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-5">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href='/about'>About</Nav.Link>
-            <Nav.Link href='/services'>Services</Nav.Link>
-            <Nav.Link href='/info'>Info</Nav.Link>
-            <Nav.Link href='/contact'>Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <>
+    <nav className='sidebar'>
+      <ul>
+      {/* <Link className='slogo' to='/'><img src="../../public/log.png"  /></Link> */}
+      {/* <li onClick={hideSideBar}><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> */}
+      <li className='menu-button' onClick={hideSideBar}><button href=''><FontAwesomeIcon icon={faXmark}/></button></li>
+      <li><a href='/'>Home</a></li>
+      <li><a href='/about'>About</a></li>
+      <li><a href='/services'>Services</a></li>
+      <li><a href='/products'>Products</a></li>
+      <li><a href='/contact'>Contact</a></li>
+      </ul>
+    </nav>
+    <nav className='navbar'>
+      <ul>
+        {/* <Link></Link> */}
+      <li className='logo'><a href="/"><img src="./src/assets/logo2.png"  /></a></li>
+      <li><a className='hideOnMoblie' href='/'>Home</a></li>
+      <li><a className='hideOnMoblie' href='/about'>About</a></li>
+      <li><a className='hideOnMoblie' href='/services'>Services</a></li>
+      <li><a className='hideOnMoblie' href='/products'>Products</a></li>
+      <li><a className='hideOnMoblie' href='/contact'>Contact</a></li>
+      <li className='menu-button' onClick={showSideBar} ><button  ><FontAwesomeIcon icon={faBars}/></button></li>
+      </ul>
+    </nav>
+    </>
+  
   );
 }
 export default Navigation

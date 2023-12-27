@@ -5,8 +5,8 @@ import Navigation from './Components/Navigation/Navigation';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
 import Home from './Pages/Home/Home';
-import Info from './Pages/Info/Info';
 import Services from './Pages/Services/Services';
+import Products from './Pages/Products/Products';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Services />} />
-          <Route path='/Info' element={<Info />} />
+          <Route path='/products' element={<Products/>} />
           <Route path='/Contact' element={<Contact />} />
         </Routes>
       </Router>
