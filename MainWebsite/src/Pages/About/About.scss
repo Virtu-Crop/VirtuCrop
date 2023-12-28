@@ -1,6 +1,4 @@
 .about {
-  height: auto;
-  min-height: 100dvh;
   background-color: #f9f9f9;
   color: #2a2a2a;
   padding: 2px;
@@ -14,18 +12,128 @@
     font-size: 50px;
     text-align: right;
     color: #004aad;
-    font-weight:900;
+    font-weight: 900;
   }
 
   .flex {
     width: 100%;
-    height: auto;
-    .left {
-      text-align: justify;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    .right {
-        text-align: justify;
-   }
+    .top {
+      text-align: center;
+      width: 80%;
+      font-size: larger;
+      font-weight: 900;
+    }
+    .midTop {
+      width: 80%;
+      text-align: center;
+      width: 80%;
+      font-size: larger;
+      font-weight: 900;
+      .title {
+        font-size: 50px;
+        font-family: 900;
+        text-align: center;
+      }
+    }
+    .midBottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .title {
+        font-weight: 900;
+        font-size: 50px;
+        font-family: 900;
+        text-align: center;
+      }
+      .card {
+        text-align: center;
+        font-weight: 600;
+        .ceo {
+          background-color: #2a2a2a25;
+          border-radius: 10px;
+          border: 5px double #2a2a2a;
+          width: 200px;
+          height: 200px;
+          margin-left: 7%;
+          transform-style: preserve-3d;
+          transform: all 0.5s ease;
+          &:hover {
+            transform: rotateY(180deg);
+            transition: 1s;
+          }
+
+          .front {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            backface-visibility: hidden;
+            color: #333;
+            font-size: 26px;
+            font-weight: 700;
+          }
+          .back {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            backface-visibility: hidden;
+            background: #ddb89200;
+            color: #000;
+            transform: rotateY(180deg);
+            font-size: 20px;
+          }
+        }
+        .coo {
+          background-color: #2a2a2a25;
+          border-radius: 10px;
+          border: 5px double #2a2a2a;
+          width: 200px;
+          height: 200px;
+          margin-left: 7%;
+          transform-style: preserve-3d;
+          transform: all 0.5s ease;
+          &:hover {
+            transform: rotateY(180deg);
+            transition: 1s;
+          }
+
+          .front {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            backface-visibility: hidden;
+            color: #333;
+            font-size: 26px;
+            font-weight: 700;
+          }
+          .back {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            backface-visibility: hidden;
+            background: #ddb89200;
+            color: #000;
+            transform: rotateY(180deg);
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .bottom {
+      text-align: center;
+      width: 80%;
+      font-size: larger;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
   }
 }

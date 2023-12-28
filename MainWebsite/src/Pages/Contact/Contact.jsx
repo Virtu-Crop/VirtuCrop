@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import './Contact.scss';
 
 const Contact = () => {
+  const [isVisible,setIsVisible]=useState(false);
+  const [buttonName,setButtonName]=useState('Contact');
   const [data,setData]=useState({name:'',email:'',phone:'',message:''});
   function handleChange(e){
       const name = e.target.name;
       const value=e.target.value;
-
       setData({...data, [name]:value})
   }
   function handleSubmit(e){
@@ -15,27 +16,34 @@ const Contact = () => {
     alert('done')
   }
 
-  function showForm(){
-    const btn = document.getElementById('button');
-    const show = document.getElementById('form');
-    if(show.style.display==='none'){
-      show.style.display='flex';
-      btn.innerHTML='Close';
+//   function showForm(){
+//     const btn = document.getElementById('button');
+//     const show = document.getElementById('form');
+//     if(show.style.display==='none'){
+//       show.style.display='flex';
+//       btn.innerHTML='Close';
       
-    }
-    else{
-      show.style.display='none';
-      btn.innerHTML='Contact';
-    }
-    
-
-  }
+//     }
+//     else{
+//       show.style.display='none';
+//       btn.innerHTML='Contact';
+//     }
+// }
+function showForm(){
+  if(isVisible===false){
+  setIsVisible(!isVisible);
+  setButtonName('Close Form')
+}else{
+  setIsVisible(!isVisible);
+  setButtonName('Contact')
+}
+}
   return (
     <>
       <div className='contact md:flex-col  sm:flex-col'>
       <p>Ready to elevate your business with Virtucrop? <br />Contact us today to explore how our expertise can drive your success.</p>
-        <button id='button' onClick={showForm}>Contact</button>
-        <form onSubmit={handleSubmit} method='post' id='form'  className='flex flex-col'>
+        <button onClick={showForm}>{buttonName}</button>
+        {isVisible && <form onSubmit={handleSubmit} method='post' id='form'  className='flex flex-col'>
           <h1>CONTACT</h1>
           {/* <label for="name">Name:</label> */}
           <input type="text" id="name" onChange={handleChange} value={data.name} placeholder='Name' name="name" required />
@@ -48,6 +56,7 @@ const Contact = () => {
 
               {/* <p>{data.name},{data.email},{data.phone},{data.message}</p> */}
             </form>
+            }
           </div>
         </>
         )

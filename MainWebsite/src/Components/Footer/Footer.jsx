@@ -23,8 +23,8 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='col '>
-                        <h1>Useful Links</h1>
-                        <ul className='sm:py-1' >
+                        <h1 className='head'>Useful Links</h1>
+                        <ul className='list sm:py-1' >
                             <li><a href="/">Home</a></li>
                             <li><a href="/about">About</a></li>
                             <li><a href="/services">Services</a></li>
@@ -33,8 +33,8 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className='col'>
-                        <h1>Our Products</h1>
-                        <ul className='sm:py-1'>
+                        <h1 className='head'>Our Products</h1>
+                        <ul className='list sm:py-1'>
                             <li><a href="" style={{ pointerEvents: 'none' }}>CoinXHub</a></li>
                             <li><a href="" style={{ pointerEvents: 'none' }}>EvolveAir</a></li>
                             <li><a href="" style={{ pointerEvents: 'none' }}>TechChor</a></li>
@@ -42,14 +42,14 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className='col'>
-                        <h1>Social Media</h1>
-                        <ul className='sm:py-1'>
+                        <h1 className='head'>Social Media</h1>
+                        <ul className='list sm:py-1'>
                             <li><a href="" style={{ pointerEvents: 'none' }}><FontAwesomeIcon icon={faInstagram} /> Instagram</a></li>
                             <li><a href="" style={{ pointerEvents: 'none' }}><FontAwesomeIcon icon={faXTwitter} /> Twitter</a></li>
                             <li><a href="" style={{ pointerEvents: 'none' }}><FontAwesomeIcon icon={faLinkedinIn} /> LinkedIn</a></li>
                             <li><a href="" style={{ pointerEvents: 'none' }}><FontAwesomeIcon icon={faFacebook} /> Facebook</a></li>
                         </ul>
-                    </div><a href=""></a>
+                    </div>
                 </div>
                 
                 <div>
