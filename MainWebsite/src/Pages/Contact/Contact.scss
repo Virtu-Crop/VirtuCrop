@@ -1,20 +1,24 @@
-.contact {
-  height: auto;
-  min-height: 100dvh;
-  padding: 2px;
+.mainC{
   background-position: right;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("../../assets/contact.jpg");
+  background-image: url("../../assets/home.jpg");
   background-attachment: fixed;
+.contact {
+  height: auto;
+  min-height: 100dvh;
   display: flex;
-  justify-content: center;
+  margin-top: 140px;
+  // justify-content: center;
   align-items:center;
+  overflow: hidden;
+  animation: tran 2s;
 
   p{
-    font-size: 200%;
+    font-size: 160%;
     font-weight: 900;
-    text-align: center;
+    text-align: left;
+    margin-left: 40px;
   }
   button{
     height: 50px;
@@ -33,11 +37,13 @@
   form {
     background-color: rgba(240, 248, 255, 0.121);
     justify-content: center;
+    margin-top: 50px;
     backdrop-filter: blur(10px);
     align-items: center;
     border-radius: 5px;
     height: 420px;
-    width: 380px;
+    width: 90%;
+    // max-width: 450px;
     // margin-left: 10px;
     // min-width: 90%;
     // display: none;
@@ -51,25 +57,25 @@
 
     input{
       margin-top: 20px;
-      width: 90%;
+      width: 95%;
       height: 40px;
-      border-radius: 3px;
+      border-radius: 5px;
       padding-left: 10px;
     }
     textarea{
       margin-top: 20px;
-      width: 90%;
-      border-radius: 3px;
+      width: 95%;
+      border-radius: 5px;
       padding-left: 10px;
     }
 
     button{
       background-color:#ffffff00 ;
       color: rgb(0, 0, 0);
-      width: 90%;
+      width: 95%;
       margin-left: 0%;
       letter-spacing: 8px;
-      border-radius: 3px;
+      border-radius: 5px;
       height: 40px;
       margin-top:10;
       &:hover{
@@ -77,5 +83,42 @@
         color:#ffffff;
       }
     }
+  }
+}
+.image{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  overflow: hidden;
+  flex-direction: column;
+  animation: tra 2s;
+
+  .photo{
+ 
+    img{
+      
+    }
+   }
+  
+}
+}
+@keyframes tran{
+  from{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes tra{
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
   }
 }

@@ -3,17 +3,17 @@ import './About.scss';
 const About = () => {
   return (
     <>
-      <div className='about md:flex-col  sm:flex-col'>
+      <div className='about flex flex-col'>
         <div className='heading'>
           <span>
-            About Us
+           <b> About Us</b>
           </span>
         </div>
         <div className='flex  flex-col gap-3'>
           <div className='top'>
             <p>
               At Virtucrop, we understand that the world of technology is constantly evolving,
-              and businesses <br /> need adaptable solutions to thrive in this dynamic environment.
+              and businesses need adaptable solutions to thrive in this dynamic environment.
             </p>
             <br />
             <p>
@@ -22,6 +22,7 @@ const About = () => {
               the digital landscape of tomorrow.
             </p>
           </div>
+          <img src="../../src/assets/about.png" width={900} alt="" />
           <div className='midTop'>
             <p className='title'> Our Mission</p>
             <p>Empower businesses through innovative and reliable technology solutions,
@@ -41,19 +42,20 @@ const About = () => {
               <div className='card  grid lg:grid-cols-2 sm:grid-cols-1 gap-8'>
               <div className='ceo'>
                 <div className='front'>
-                  Photo
+                  <img src="../../src/assets/ceo.png" alt="" />
                 </div>
                 <div className='back'>
-                  Imdadullah J.D <br />
+                  Imdadullah J.D. <br />
                   CEO / <br /> Founder
                 </div>
               </div>
               <div className='coo'>
                 <div className='front'>
-                Photo
+                <img src="../../src/assets/coo.png" alt="" />
+                
                 </div>
                 <div className='back'>
-                  Jayesh BN <br />
+                  Jayesh B.N. <br />
                   COO / <br /> Co-Founder
                 </div>
               </div>
@@ -64,15 +66,15 @@ const About = () => {
             
             <p>
               With a passion for excellence and a commitment to innovation, we
-              specialize in software development, <br /> blockchain technology, and
+              specialize in software development,  blockchain technology, and
               bespoke solutions for the ed-tech and fintech sectors.
               </p>
               <br />
             <p>
               Our team of skilled professionals is committed to crafting
-              tailor-made software applications  that address <br /> your unique
+              tailor-made software applications  that address  your unique
               challenges and opportunities. From conceptualization to execution,
-              we work closely with you to <br /> ensure that our solutions align seamlessly
+              we work closely with you to ensure that our solutions align seamlessly
               with your vision and objectives.
             </p>
           </div>

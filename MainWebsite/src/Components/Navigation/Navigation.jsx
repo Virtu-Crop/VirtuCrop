@@ -22,7 +22,7 @@ const Navigation = () => {
       <ul>
       {/* <Link className='slogo' to='/'><img src="../../public/log.png"  /></Link> */}
       {/* <li onClick={hideSideBar}><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> */}
-      <li className='menu-button' onClick={hideSideBar}><button href=''><FontAwesomeIcon icon={faXmark}/></button></li>
+      <li className='menu-button' onClick={hideSideBar}><a href=''><FontAwesomeIcon icon={faXmark}/></a></li>
       <li><a href='/'>Home</a></li>
       <li><a href='/about'>About</a></li>
       <li><a href='/services'>Services</a></li>

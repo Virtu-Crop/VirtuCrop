@@ -4,24 +4,43 @@ import './Products.scss';
 const Products = () => {
   return (
     <>
-      <div className='info md:flex-col  sm:flex-col'>
+      <div className='product '>
         <div className='heading'>
-          <span>
+         <b> <span>
             Products
-          </span>
+          </span></b>
         </div>
-        <div className='content flex flex-col gap-2'>
-          <div className='left'>
-          <h1>EvolveAir – Coming Soon</h1>
-             <p>Transform your learning journey with EvolveAir! 
-              Dive into <br /> cutting-edge e-learning experiences tailored
-               to ignite <br /> your potential.</p>
+        <div className='cards'>
+          <div className='grid grid-cols-1 gap-20'>
+          <div className='card'>
+          <img className='front' src="../../src/assets/evolve.png" alt="" />
+             <p className='back'>An innovative E-learning platform serving
+             both technical and non-technical realm along with super 
+             amazing affiliate programs.
+                <br />
+              <button><a  href="https://evolveair.org/?tpclid=facebook.PAAaa4gzcbWHz407Si080yBilUEr9ZPbIlqT7Il_m0elZOUVZTYpEveHSEOLE" target='_blank'>Know More</a></button>
+                
+                </p>
+              
+
            </div>
-          <div className='right'>
-          <h1>CoinXHub – Coming Soon</h1>
-              <p>Step into the future with CoinXHub. A seamless 
-                blockchain <br /> ecosystem designed for tomorrow’s
-                 decentralized world.</p>
+          <div className='card'>
+          <b><h1 className='front'>CoinXHub</h1></b>
+          {/* <img className='front' src="../../src/assets/evolve.png" alt="" /> */}
+              <p className='back'>Step into the future with CoinXHub . A seamless 
+               blockchain  ecosystem designed for tomorrow’s
+              decentralized world. 
+              <br />
+              <button>
+                <a href="">
+                  Know More
+                  </a>
+                  </button>
+              </p>
+           </div>
+        
+
+      
            </div>
         </div>
       </div>

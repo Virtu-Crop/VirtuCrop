@@ -1,63 +1,74 @@
 .about {
-  background-color: #f9f9f9;
-  color: #2a2a2a;
-  padding: 2px;
+  width: 100%;
   background-position: right;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("../../assets/about.jpg");
+  background-image: url("../../assets/home.jpg");
   background-attachment: fixed;
+  // background-image: radial-gradient(circle at 30% 20%,#ebf4ff,#fff);
+  overflow: hidden;
+  color: #2a2a2a;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  
   .heading {
+    margin-top: 100px;
     width: 100%;
-    font-size: 50px;
-    text-align: right;
+    font-size: 70px;
+    text-align: center;
     color: #004aad;
-    font-weight: 900;
   }
 
   .flex {
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  animation: trans 3s;
+
 
     .top {
+      margin-top: 3%;
       text-align: center;
-      width: 80%;
+      width: 100%;
       font-size: larger;
       font-weight: 900;
     }
     .midTop {
-      width: 80%;
+      margin-top: 5%;
+      width: 100%;
       text-align: center;
-      width: 80%;
       font-size: larger;
       font-weight: 900;
       .title {
+        color: #004aad;
         font-size: 50px;
         font-family: 900;
         text-align: center;
       }
     }
     .midBottom {
+      margin-top: 5%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       .title {
+        color: #004aad;
         font-weight: 900;
         font-size: 50px;
-        font-family: 900;
         text-align: center;
       }
       .card {
+        margin-top: 6%;
         text-align: center;
         font-weight: 600;
         .ceo {
           background-color: #2a2a2a25;
-          border-radius: 10px;
-          border: 5px double #2a2a2a;
+          border-radius: 100px;
+          // border: 2px solid #2a2a2a;
           width: 200px;
           height: 200px;
           margin-left: 7%;
@@ -81,6 +92,7 @@
           .back {
             align-items: center;
             display: flex;
+            margin-top: -150px;
             flex-direction: column;
             justify-content: center;
             backface-visibility: hidden;
@@ -92,9 +104,9 @@
         }
         .coo {
           background-color: #2a2a2a25;
-          border-radius: 10px;
-          border: 5px double #2a2a2a;
           width: 200px;
+          border-radius: 100px;
+
           height: 200px;
           margin-left: 7%;
           transform-style: preserve-3d;
@@ -117,6 +129,7 @@
           .back {
             align-items: center;
             display: flex;
+            margin-top: -150px;
             flex-direction: column;
             justify-content: center;
             backface-visibility: hidden;
@@ -129,11 +142,24 @@
       }
     }
     .bottom {
+      margin-top: 3%;
       text-align: center;
-      width: 80%;
+      width: 100%;
       font-size: larger;
       font-weight: 900;
-      margin-bottom: 20px;
+      margin-bottom: 10%;
     }
   }
 }
+
+@keyframes trans{
+    from{
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

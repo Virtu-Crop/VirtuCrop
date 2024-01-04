@@ -16,6 +16,7 @@ const Contact = () => {
     try {
       await axios.post('http://localhost:5000/contact', data);
       console.log('Form Submitted Successfully');
+      alert('Form Submitted Successfully');
       setData({ name: '', email: '', phone: '', message: '' });
     } catch (error) {
       console.error('Error submitting form: ' + error.message);
@@ -39,10 +40,16 @@ const Contact = () => {
   }
   return (
     <>
-      <div className='contact md:flex-col  sm:flex-col'>
-        <p>Ready to elevate your business with Virtucrop? <br />Contact us today to explore how our expertise can drive your success.</p>
-        <button onClick={showForm}>{buttonName}</button>
-        {isVisible && <form onSubmit={handleSubmit} method='post' id='form' className='flex flex-col'>
+    <div className='mainC grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-2'>
+      <div className='contact flex flex-col sm:flex-col'>
+        <p>
+          Ready to elevate your business with Virtucrop?
+          Contact us today to explore how our expertise can
+           drive your success.
+           </p>
+        {/* <button onClick={showForm}>{buttonName}</button> */}
+        {/* {isVisible &&  */}
+        <form onSubmit={handleSubmit} method='post' id='form' className='flex flex-col'>
           <h1>CONTACT</h1>
           {/* <label for="name">Name:</label> */}
           <input type="text" id="name" onChange={handleChange} value={data.name} placeholder='Name' name="name" required />
@@ -55,7 +62,13 @@ const Contact = () => {
           <button type="submit" >Submit</button>
           {/* <p>{data.name},{data.email},{data.phone},{data.message}</p> */}
         </form>
-        }
+        {/* } */}
+      </div>
+      <div className='image'>
+        <div className='photo'>
+        <img src="../../src/assets/contact-p.png" width={400}  style={{borderRadius:'0%'}} alt="img" />
+      </div>
+      </div>
       </div>
     </>
   )

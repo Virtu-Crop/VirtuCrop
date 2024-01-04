@@ -14,7 +14,8 @@ const conn = mysql.createConnection({
     host:'localhost',
     user:'root',
     password:'',
-    database:'virtucrop'
+    database:'virtucrop',
+    // insecureAuth : true
 });
 
 

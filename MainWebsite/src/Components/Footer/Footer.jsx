@@ -1,64 +1,100 @@
 import React from 'react';
 import './Footer.scss';
-import { faFacebook, faInstagram, faLinkedinIn, faXTwitter} from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const Footer = () => {
     return (
         <>
-            <footer className='footer sm:text-center lg:text-left   flex flex-col '>
-                <hr />
-                <br />
-                <div className=' flex   flex-col md:flex-row'>
-                    <div className='logo '>
-                        <div className='logo-main'><a href="/"><img src="./src/assets/logowb.png" alt="logo" /></a></div>
-                        {/* <hr /> */}
-                        <div className='address sm:py-3'>
-                        <h1>Address :</h1>
-                                <p>320, Gera's Imperium</p> 
-                                <p>Rise, Hinjawadi Phase </p>
-                                <p>II, Pimpri-Chinchwad,</p>
-                                <p>Maharashtra 411057</p>
+            <footer className='footer'>
+                <div className='main flex flex-col'>
+                    <div className='top flex flex-row'>
+                        <div className='col'>
+                            <div className='logo'>
+                                <a href="/"><img src="./src/assets/logo2.png" alt="logo" /></a>
+                                <div className='social flex-row'>
+                                    {/* <a target='_blank' href=""><FontAwesomeIcon icon={faFacebook} /></a> */}
+                                    <a target='_blank' href="https://www.instagram.com/virtucrop/"><FontAwesomeIcon icon={faInstagram} /></a>
+                                    <a target='_blank' href="https://www.linkedin.com/company/virtucrop-private-limited/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                                    {/* <a target='_blank' href=""><FontAwesomeIcon icon={faXTwitter} /></a> */}
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className='col '>
-                        <h1 className='head'>Useful Links</h1>
-                        <ul className='list sm:py-1' >
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/services">Services</a></li>
-                            <li><a href="/products">Products</a></li>
-                            <li><a href="/contact">Contact</a></li>
-                        </ul>
+                    <div className='mid grid lg:grid-cols-4 sm:grid-cols-2 gap-2'>
+                        <div className='col1'>
+                        <div className='stack'>
+                            <b>Address</b>
+                            <div className='links'>
+                            <p>
+                                320, Gera's Imperium Rise,
+                                Hinjawadi Phase II,
+                                Pimpri-Chinchwad,
+                                Maharashtra 411057
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div className='col2'>
+                        <div className='stack'>
+                            <b>Useful Link</b>
+                            <div className='links'>
+                            <a href="/">Home</a>
+                            <a href="/about">About</a>
+                            <a href="/services">Services</a>
+                            <a href="/products">Products</a>
+                            <a href="/contact">Contact</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div className='col3'>
+                        <div className='stack'>
+                            <b>Our Products</b>
+                            <div className='links'>
+                            <a href="/" style={{pointerEvents:'none', color:'grey'}}>CoinXHub</a>
+                            <a target='_blank' href="https://evolveair.org/?tpclid=facebook.PAAaa4gzcbWHz407Si080yBilUEr9ZPbIlqT7Il_m0elZOUVZTYpEveHSEOLE">Evolveair</a>
+                            {/* <a href="/"></a> */}
+                            {/* <a href="/products">Products</a>
+                            <a href="/contact">Contact</a> */}
+                            </div>
+                        </div>
+                        </div>
+                        <div className='col4'>
+                        <div className='stack'>
+                            <b>Company</b>
+                            <div className='links'>
+                            <a href="/" style={{pointerEvents:'none', color:'grey'}}>Privacy & Policies</a>
+                            <a href="/about" style={{pointerEvents:'none', color:'grey'}}>Terms & Conditions</a>
+                            {/* <a href="/services">Services</a> */}
+                            {/* <a href="/products">Products</a> */}
+                            {/* <a href="/contact">Contact</a> */}
+                            </div>
+                        </div>
+                        </div>
+                        {/* <div className='col5'>
+                        <div className='stack'>
+                            <b>Link</b>
+                            <div className='links'>
+                            <a href="/">Home</a>
+                            <a href="/about">About</a>
+                            <a href="/services">Services</a>
+                            <a href="/products">Products</a>
+                            <a href="/contact">Contact</a>
+                            </div>
+                        </div>
+                        </div> */}
                     </div>
-                    <div className='col'>
-                        <h1 className='head'>Our Products</h1>
-                        <ul className='list sm:py-1'>
-                            <li><a href="" style={{ pointerEvents: 'none' }}>CoinXHub</a></li>
-                            <li><a href="" style={{ pointerEvents: 'none' }}>EvolveAir</a></li>
-                            <li><a href="" style={{ pointerEvents: 'none' }}>TechChor</a></li>
-                            <li></li>
-                        </ul>
+                    <div className='bottom'>
+                        <div className='main'>
+                            <div className='container'>
+                                <div className='rights'>&copy; 2023 Your Company. All rights reserved.</div>
+                                {/* <div className='author'></div> */}
+                            </div>
+                        </div>
                     </div>
-                    <div className='col'>
-                        <h1 className='head'>Social Media</h1>
-                        <ul className='list sm:py-1'>
-                            <li><a href="" style={{ pointerEvents: 'none' }}><FontAwesomeIcon icon={faInstagram} /> Instagram</a></li>
-                            <li><a href="" style={{ pointerEvents: 'none' }}><FontAwesomeIcon icon={faXTwitter} /> Twitter</a></li>
-                            <li><a href="" style={{ pointerEvents: 'none' }}><FontAwesomeIcon icon={faLinkedinIn} /> LinkedIn</a></li>
-                            <li><a href="" style={{ pointerEvents: 'none' }}><FontAwesomeIcon icon={faFacebook} /> Facebook</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div>
-                    {/* <hr /> */}
-                    <p className='copy'>&copy; 2023 Your Company. All rights reserved.</p>
-
                 </div>
             </footer>
-
         </>
     )
 }
