@@ -1,7 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Home.scss';
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ // Set the animation duration (in milliseconds)
+      once: false, // Only trigger the animation once
+    });
+  }, []);
   // const [isVisible, setIsVisible] = useState(false);
   // const [data,setData]=useState('Read More');
   // const handleShow = () => {
@@ -21,7 +28,7 @@ const Home = () => {
     // <div className='container w-screen'>
     <div className='mainHome'>
     <div className='home grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 gap-5'>
-      <div className='left '>
+      <div className='left ' data-aos='slide-right' data-aos-duration='1600' data-aos-delay='200' data-aos-easing='ease-in-out' >
        <b> SEEDING
         <span className='content'> INNOVATION </span>
         <br />
@@ -34,17 +41,17 @@ const Home = () => {
           creating intuitive user experiences to strategic business development
           — we bring ideas to life. Let's embark on a transformative journey together.</p>
         </div>
-        <div className='mid'>
+        <div className='mid' data-aos='slide-left' data-aos-duration='1600' data-aos-delay='200' data-aos-easing='ease-in-out' >
       <div data-w-id="a52a12e1-5170-8081-df0d-d297aff62449" className="absolute hero-v1-decoration" >
             <img src="https://assets-global.website-files.com/652a762c1fcb49bcec64ff37/653f645e264b0d477faadfac_Decoration%201.1.svg"  loading="lazy" alt="example logo" />  
         </div>
-        <div className='img2'>
+        <div className='img2' >
         <img src="https://assets-global.website-files.com/652a762c1fcb49bcec64ff37/653f64b987af153eb9ec4140_Decoration%201.2.svg" loading="lazy" alt="example logo"/>
         </div>
         </div>
      
      </div>
-     <div className='right flex flex-col' >
+     <div className='right flex flex-col' data-aos='zoom-in' data-aos-duration='800' data-aos-delay='100' data-aos-easing='ease-in-out' >
         {/* <button id='button' onClick={handleShow}>{data}</button> */}
         {/* {isVisible && */}
         <ul >
@@ -57,7 +64,7 @@ const Home = () => {
         </ul>
         <div className='image'>
         <img src="../../src/assets/why.png" width={700} alt="" />
-        <p>
+        <p  data-aos='zoom-in' data-aos-duration='800' data-aos-delay='100' data-aos-easing='ease-in-out' >
           At VirtuCrop, we go beyond functionality by incorporating creative design services, ensuring intuitive user 
           experiences that captivate and engage. We understand the significance of strategic branding in setting businesses
            apart, and our dedicated efforts in this realm reflect our commitment to elevating your brand identity. Moreover,

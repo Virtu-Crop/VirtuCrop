@@ -1,18 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Services.scss';
 
 const Services = () => {
+
+  useEffect(() => {
+    AOS.init({ // Set the animation duration (in milliseconds)
+      once: false, // Only trigger the animation once
+    });
+  }, []);
+
+
   return (
     <services>
       <div className='services md:flex-col  sm:flex-col'>
-        <div className='heading'>
+        <div className='heading' data-aos='slide-up' data-aos-duration='800' data-aos-delay='0' data-aos-easing='ease-in-out'>
           <span>
             <b>Services</b>
           </span>
         </div>
         <div className='cards'>
           <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-20'>
-            <div className='card'>
+            <div className='card-left' data-aos='slide-right' data-aos-duration='1200' data-aos-delay='100' data-aos-easing='ease-in-out'>
               <div className="front">
                 <p>
                   Software Development
@@ -28,7 +38,7 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className='card'>
+            <div className='card-right' data-aos='slide-left' data-aos-duration='1200' data-aos-delay='100' data-aos-easing='ease-in-out'>
               <div className='front'>
                 <p>
                   Blockchain Development
@@ -54,7 +64,7 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className='card'>
+            <div className='card-left' data-aos='slide-right' data-aos-duration='1200' data-aos-delay='200' data-aos-easing='ease-in-out'>
               <div className='front'>
                 <p>Custom Software Development</p>
               </div>
@@ -78,7 +88,7 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className='card'>
+            <div className='card-right' data-aos='slide-left' data-aos-duration='1200' data-aos-delay='200' data-aos-easing='ease-in-out'>
               <div className='front'>
                 <p>
                   Business Development
@@ -104,7 +114,7 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className='card'>
+            <div className='card-left' data-aos='slide-right' data-aos-duration='1200' data-aos-delay='100' data-aos-easing='ease-in-out'>
               <div className='front'>
                 <p>
                   Design Services
@@ -130,7 +140,7 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className='card'>
+            <div className='card-right' data-aos='slide-left' data-aos-duration='1200' data-aos-delay='100' data-aos-easing='ease-in-out'>
               <div className='front'>
                 <p>
                   Branding

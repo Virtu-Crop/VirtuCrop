@@ -26,26 +26,32 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  animation: trans 3s;
+
 
 
     .top {
       margin-top: 3%;
       text-align: center;
+      align-items: center;
       width: 100%;
       font-size: larger;
-      font-weight: 900;
+      font-weight: 300;
+      
+      
+      
     }
+
+    
     .midTop {
       margin-top: 5%;
       width: 100%;
       text-align: center;
       font-size: larger;
-      font-weight: 900;
+      font-weight: 300;
       .title {
         color: #004aad;
         font-size: 50px;
-        font-family: 900;
+        font-weight: 600;
         text-align: center;
       }
     }
@@ -57,16 +63,16 @@
       justify-content: center;
       .title {
         color: #004aad;
-        font-weight: 900;
+        font-weight: 600;
         font-size: 50px;
         text-align: center;
       }
       .card {
         margin-top: 6%;
         text-align: center;
-        font-weight: 600;
+        font-weight: 300;
         .ceo {
-          background-color: #2a2a2a25;
+          background-color: #ffffff00;
           border-radius: 100px;
           // border: 2px solid #2a2a2a;
           width: 200px;
@@ -75,6 +81,7 @@
           transform-style: preserve-3d;
           transform: all 0.5s ease;
           &:hover {
+            background-color: #f1eaea97;
             transform: rotateY(180deg);
             transition: 1s;
           }
@@ -87,7 +94,7 @@
             backface-visibility: hidden;
             color: #333;
             font-size: 26px;
-            font-weight: 700;
+            font-weight: 300;
           }
           .back {
             align-items: center;
@@ -103,7 +110,7 @@
           }
         }
         .coo {
-          background-color: #2a2a2a25;
+          background-color: #ffffff00;
           width: 200px;
           border-radius: 100px;
 
@@ -112,6 +119,7 @@
           transform-style: preserve-3d;
           transform: all 0.5s ease;
           &:hover {
+            background-color: #f1eaea97;
             transform: rotateY(180deg);
             transition: 1s;
           }
@@ -146,7 +154,7 @@
       text-align: center;
       width: 100%;
       font-size: larger;
-      font-weight: 900;
+      font-weight: 300;
       margin-bottom: 10%;
     }
   }

@@ -1,16 +1,26 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './About.scss';
 const About = () => {
+
+  useEffect(() => {
+    AOS.init({ // Set the animation duration (in milliseconds)
+      once: false, // Only trigger the animation once
+    });
+  }, []);
+
+
   return (
     <>
-      <div className='about flex flex-col'>
-        <div className='heading'>
+      <div className='about flex flex-col' >
+        <div className='heading' data-aos='slide-up' data-aos-duration='1600' data-aos-delay='200' data-aos-easing='ease-in-out'>
           <span>
            <b> About Us</b>
           </span>
         </div>
-        <div className='flex  flex-col gap-3'>
-          <div className='top'>
+        <div className='flex  flex-col '>
+          <div className='top' data-aos='slide-up' data-aos-duration='1600' data-aos-delay='200' data-aos-easing='ease-in-out'>
             <p>
               At Virtucrop, we understand that the world of technology is constantly evolving,
               and businesses need adaptable solutions to thrive in this dynamic environment.
@@ -21,9 +31,13 @@ const About = () => {
               business development, and custom software solutions, we are dedicated to shaping
               the digital landscape of tomorrow.
             </p>
+
+            
           </div>
-          <img src="../../src/assets/about.png" width={900} alt="" />
-          <div className='midTop'>
+          <div className='img1' data-aos='slide-up' data-aos-duration='1600' data-aos-delay='200' data-aos-easing='ease-in-out'>
+          <img src="../../src/assets/about.png" width={900} alt="" style={{ alignItems:'center' }}/>
+          </div>
+          <div className='midTop' data-aos='zoom-in' data-aos-duration='1600' data-aos-delay='200' data-aos-easing='ease-in-out'>
             <p className='title'> Our Mission</p>
             <p>Empower businesses through innovative and reliable technology solutions,
               fostering growth and success in the digital era.
@@ -37,31 +51,31 @@ const About = () => {
             </p>
 
           </div>
-          <div className="midBottom ">
+          <div className="midBottom" data-aos='zoom-in' data-aos-duration='1600' data-aos-delay='200' data-aos-easing='ease-in-out'>
           <p className='title'>Meet our Captains</p>
               <div className='card  grid lg:grid-cols-2 sm:grid-cols-1 gap-8'>
               <div className='ceo'>
-                <div className='front'>
+                <div className='front'data-aos='slide-right' data-aos-duration='800' data-aos-delay='0' data-aos-easing='ease-in-out'>
                   <img src="../../src/assets/ceo.png" alt="" />
                 </div>
-                <div className='back'>
+                <div className='back' data-aos='slide-right' data-aos-duration='1600' data-aos-delay='0' data-aos-easing='ease-in-out'>
                   Imdadullah J.D. <br />
                   CEO / <br /> Founder
                 </div>
               </div>
               <div className='coo'>
-                <div className='front'>
+                <div className='front'data-aos='slide-left' data-aos-duration='800' data-aos-delay='0' data-aos-easing='ease-in-out'>
                 <img src="../../src/assets/coo.png" alt="" />
                 
                 </div>
-                <div className='back'>
+                <div className='back'data-aos='slide-left' data-aos-duration='1600' data-aos-delay='0' data-aos-easing='ease-in-out'>
                   Jayesh B.N. <br />
                   COO / <br /> Co-Founder
                 </div>
               </div>
               </div>
           </div>
-          <div className='bottom flex'>
+          <div className='bottom' data-aos='zoom-in' data-aos-duration='1600' data-aos-delay='200' data-aos-easing='ease-in-out'>
 
             
             <p>

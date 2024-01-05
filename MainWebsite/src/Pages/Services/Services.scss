@@ -26,9 +26,40 @@
     // flex-direction: column;
     .grid {
       text-align: center;
-      .card {
+      .card-left {
         min-width: 300px;
-        animation: trans 2s;
+        border-radius: 30px;
+        background: linear-gradient(145deg, #c0d5e2, #ebcedd);
+        box-shadow: 2px 2px 50px #878181, -20px -20px 60px #ffffff;
+        .front {
+          margin-left: 10px;
+          font-size: 30px;
+          font-weight: 900;
+          text-align: left;
+          padding: 10px;
+        }
+
+        .back {
+          margin-left: 15px;
+          font-size: 19px;
+          padding: 35px;
+          margin-top: -30px;
+          ul {
+            li {
+              text-align: left;
+              list-style-type: disc;
+            }
+          }
+        }
+
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          background-color: #9089a75a;
+          backdrop-filter: blur(10px);
+        }
+      }
+      .card-right {
+        min-width: 300px;
         border-radius: 30px;
         background: linear-gradient(145deg, #c0d5e2, #ebcedd);
         box-shadow: 2px 2px 50px #878181, -20px -20px 60px #ffffff;
