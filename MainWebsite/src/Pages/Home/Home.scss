@@ -32,29 +32,29 @@
       span {
         color: #004aad;
       }
-      .har {
-        padding-left: 2%;
-      }
+      
       p {
         width: 90%;
       }
     }
 
     .mid {
-      margin-top: 20%;
+      
+      animation: float 3s ease-in-out 1.6s infinite;
+      margin-top: 35%;
     }
-    .three {
-      video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      // background-position: right;
-      // background-repeat: no-repeat;
-      // background-size: 100% 100%;
-      // background-image: url("../../assets/earth.mp4");
-      // background-attachment: fixed;
-    }
+    // .three {
+    //   video {
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    //   }
+    //   // background-position: right;
+    //   // background-repeat: no-repeat;
+    //   // background-size: 100% 100%;
+    //   // background-image: url("../../assets/earth.mp4");
+    //   // background-attachment: fixed;
+    // }
   }
   .right {
     margin-top: 2%;
@@ -75,7 +75,8 @@
         color: black;
         margin-top: 3%;
         font-size: 20px;
-        font-weight: 300;
+        font-weight: 400;
+        letter-spacing: 1px;
       }
     }
     .image {
@@ -86,8 +87,9 @@
       margin-bottom: 5%;
       p {
         font-size: 20px;
-        font-weight: 300;
+        font-weight: 400;
         padding: 3%;
+        letter-spacing: 1px;
       }
     }
   }
@@ -101,5 +103,17 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

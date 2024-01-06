@@ -66,7 +66,7 @@ const Contact = () => {
       </div>
       <div className='image'>
         <div className='photo'>
-        <img src="../../src/assets/contact-p.png" width={400}  style={{borderRadius:'0%'}} alt="img" />
+        <img src="../../src/assets/contact-p.png" width={350}  style={{borderRadius:'0%', marginBottom: '10px'}} alt="img" />
       </div>
       </div>
       </div>

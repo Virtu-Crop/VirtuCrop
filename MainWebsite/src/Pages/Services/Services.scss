@@ -41,7 +41,9 @@
 
         .back {
           margin-left: 15px;
-          font-size: 19px;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 1px;
           padding: 35px;
           margin-top: -30px;
           ul {
@@ -56,6 +58,9 @@
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           background-color: #9089a75a;
           backdrop-filter: blur(10px);
+          .front{
+            color: #004aad;
+          }
         }
       }
       .card-right {
@@ -73,7 +78,9 @@
 
         .back {
           margin-left: 15px;
-          font-size: 19px;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 1px;
           padding: 35px;
           margin-top: -30px;
           ul {
@@ -88,6 +95,9 @@
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           background-color: #9089a75a;
           backdrop-filter: blur(10px);
+          .front{
+            color: #004aad;
+          }
         }
       }
     }

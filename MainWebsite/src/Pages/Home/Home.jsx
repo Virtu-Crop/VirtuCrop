@@ -35,7 +35,7 @@ const Home = () => {
         <span className='har'> HARVESTING </span>
         SUCCESS</b>
         <br></br>
-        <p style={{fontSize: 20, paddingTop: 40}}>Discover a world of possibilities with VirtuCrop, your
+        <p style={{fontSize: 19, paddingTop: 40, fontWeight: 480}}>Discover a world of possibilities with VirtuCrop, your
           trusted partner in harnessing the power of technology. From crafting
           bespoke software solutions to pioneering blockchain applications,
           creating intuitive user experiences to strategic business development
