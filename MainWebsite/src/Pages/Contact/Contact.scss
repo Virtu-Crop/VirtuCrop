@@ -1,122 +1,120 @@
-.mainC{
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("../../assets/home.jpg");
-  background-attachment: fixed;
-.contact {
-  height: auto;
-  min-height: 100dvh;
-  display: flex;
-  margin-top: 150px;
-  // justify-content: center;
-  align-items:center;
-  overflow: hidden;
-  animation: tran 2s;
-
-  p{
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-align: left;
-    margin-left: 40px;
-  }
-  button{
-    height: 50px;
-    margin-left: 50%;
-    margin-top: 2%;
-    color: #004aad;
-    border: 2px solid #004aad;
-    letter-spacing: 3px;
-    background-color: rgba(212, 233, 238, 0);
-    width: 150px;
-
-    &:hover{
-      color: #004aad;
-      background-color: #fff;
-    }
-  }
-  form {
-    background-color: rgba(240, 248, 255, 0.121);
-    justify-content: center;
-    margin-top: 50px;
-    backdrop-filter: blur(10px);
+.mainC {
+  background: linear-gradient(
+    168deg,
+    white 0%,
+    rgba(220.45, 223.84, 254.36, 0.7) 100%
+  );
+  .contact {
+    height: auto;
+    min-height: 100dvh;
+    display: flex;
+    margin-top: 150px;
+    // justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    height: 420px;
-    width: 90%;
-    // max-width: 450px;
-    // margin-left: 10px;
-    // min-width: 90%;
-    // display: none;
+    overflow: hidden;
+    animation: tran 2s;
 
-    h1 {
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-align: justify;
+      margin-left: 6%;
+      padding-right: 4px;
+    }
+    button {
+      height: 50px;
+      margin-left: 50%;
+      margin-top: 2%;
       color: #004aad;
-      margin-top: 0px;
-      font-size: 200%;
-      font-weight: 700;
-      text-align: center;
-    }
-
-    input{
-      margin-top: 20px;
-      width: 95%;
-      height: 40px;
-      border-radius: 5px;
-      padding-left: 10px;
-    }
-    textarea{
-      margin-top: 20px;
-      width: 95%;
-      border-radius: 5px;
-      padding-left: 10px;
-    }
-
-    button{
-      background-color:#ffffff00 ;
-      color: #004aad;
-      width: 95%;
-      margin-left: 0%;
+      border: 2px solid #004aad;
       letter-spacing: 3px;
+      background-color: rgba(212, 233, 238, 0);
+      width: 150px;
+
+      &:hover {
+        color: #004aad;
+        background-color: #fff;
+      }
+    }
+    form {
+      background-color: rgba(240, 248, 255, 0.121);
+      justify-content: center;
+      margin-top: 50px;
+      backdrop-filter: blur(10px);
+      align-items: center;
       border-radius: 5px;
-      height: 40px;
-      margin-top:10;
-      &:hover{
-        background-color:#ffffff;
-        color:#004aad;
-        font-weight: 600;
+      height: 420px;
+      width: 90%;
+      // max-width: 450px;
+      // margin-left: 10px;
+      // min-width: 90%;
+      // display: none;
+
+      h1 {
+        color: #004aad;
+        margin-top: 0px;
+        font-size: 200%;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      input {
+        margin-top: 20px;
+        width: 95%;
+        height: 40px;
+        border-radius: 5px;
+        padding-left: 10px;
+      }
+      textarea {
+        margin-top: 20px;
+        width: 95%;
+        border-radius: 5px;
+        padding-left: 10px;
+      }
+
+      button {
+        background-color: #ffffff00;
+        color: #004aad;
+        width: 95%;
+        margin-left: 0%;
+        letter-spacing: 3px;
+        border-radius: 5px;
+        height: 40px;
+        margin-top: 10;
+        &:hover {
+          background-color: #004aad;
+          color: #fff;
+          font-weight: 600;
+        }
       }
     }
   }
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    animation: tra 2s;
+  }
 }
-.image{
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  overflow: hidden;
-  flex-direction: column;
-  animation: tra 2s;
-
-  
-  
-}
-}
-@keyframes tran{
-  from{
+@keyframes tran {
+  from {
     opacity: 0;
     transform: translateX(-100px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
-@keyframes tra{
-  from{
+@keyframes tra {
+  from {
     opacity: 0;
     transform: translateY(100px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0);
   }

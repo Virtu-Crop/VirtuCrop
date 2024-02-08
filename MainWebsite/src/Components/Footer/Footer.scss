@@ -1,6 +1,11 @@
 .footer {
-  background-image: linear-gradient(-90deg, #e6c3d3, #afcbe4 80%);
+  background: linear-gradient(
+    168deg,
+    rgba(220.45, 223.84, 254.36, 0.7) 100%,
+    white 0%
+  );
   padding-top: 48px;
+  border: 1px solid #cad9ff;
   padding-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
@@ -12,7 +17,7 @@
   letter-spacing: 1px;
 
   .main {
-    b{
+    b {
       font-size: 20px;
       font-weight: 400;
       letter-spacing: 1px;

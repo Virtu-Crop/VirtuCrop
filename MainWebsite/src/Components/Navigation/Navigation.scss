@@ -1,16 +1,16 @@
 .navbar {
   z-index: 1000;
-  border: 2px solid var(--black-8);
-  background-color: rgba(206, 218, 223, 0.132);
-  -webkit-backdrop-filter: brightness() saturate(200%) blur(6px);
-  backdrop-filter: brightness() saturate(200%) blur(6px);
-  border-radius: 32px;
+  // border: 5px solid var(--black-8);
+  // background-color: rgb(75, 160, 197);
+  // -webkit-backdrop-filter: brightness() saturate(200%) blur(6px);
+  // backdrop-filter: brightness() saturate(200%) blur(6px);
+  // border-radius: 32px;
   margin-top: 0;
   margin-left: 20px;
   margin-right: 20px;
-  position: fixed;
-  font-size: 15px;
-  font-weight: 400;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 700;
   letter-spacing: 1px;
   top: 32px;
   left: 20px;
@@ -55,7 +55,6 @@
 button {
   height: 100%;
   width: 100px;
- 
 }
 
 .sidebar {
@@ -134,7 +133,7 @@ button {
 }
 
 @media (max-width: 431px) {
-  .navbar{
+  .navbar {
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;
