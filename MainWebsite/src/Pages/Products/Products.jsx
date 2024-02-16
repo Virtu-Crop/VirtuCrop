@@ -43,7 +43,7 @@ const Products = () => {
                 <br />
                 <button>
                   <a href="">
-                    Know More
+                    Coming Soon
                   </a>
                 </button>
               </p>

@@ -9,23 +9,25 @@ import 'swiper/css/navigation';
 
 import './Services.scss';
 // import required modules
-import { Keyboard, Pagination, Navigation } from 'swiper/modules';
+import { Keyboard, Pagination, Navigation, Mousewheel } from 'swiper/modules';
 
 export default function Services() {
     return (
         <div className='services'>
             <Swiper
                 slidesPerView={1}
-                spaceBetween={100}
+                spaceBetween={500}
                 keyboard={{
                     enabled: true,
                 }}
-                loop={true}
+                loop={false}
+                mousewheel={true}
+                direction={'horizontal'}
                 pagination={{
-                    clickable: true,
+                    clickable: false,
                 }}
-                navigation={true}
-                modules={[Keyboard, Pagination, Navigation]}
+
+                modules={[Keyboard, Pagination, Navigation, Mousewheel]}
                 className="mySwiper"
             >
                 <SwiperSlide >
@@ -81,13 +83,9 @@ export default function Services() {
                 <SwiperSlide>
                     <div className='grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-2'>
                         <div className='content'>
-                            <h1 style={{
-                                marginLeft: '15%'
-                            }}>Custom Software
+                            <h1 >Custom Software
                                 Development</h1>
-                            <ul style={{
-                                marginLeft: '-15%'
-                            }}>
+                            <ul>
                                 <li>
                                     Tailored Software Solutions.
                                 </li>

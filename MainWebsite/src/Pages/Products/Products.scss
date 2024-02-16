@@ -37,15 +37,15 @@
     padding: 35px;
     // flex-direction: column;
     .grid {
-      text-align: center;
       align-items: center;
       justify-content: center;
       display: flex;
       flex-direction: column;
+      text-align: center;
       .card {
-        border: rgba(133, 134, 143, 0.7) 2px solid;
-        width: 25%;
-        min-height: 450px;
+        max-width: 370px;
+        min-width: 10%;
+        min-height: 400px;
         border-radius: 30px;
         background: linear-gradient(
           168deg,
@@ -93,10 +93,9 @@
         }
       }
       .card1 {
-        border: rgba(133, 134, 143, 0.7) 2px solid;
-
-        width: 25%;
-        min-height: 450px;
+        max-width: 370px;
+        min-width: 10%;
+        min-height: 400px;
         border-radius: 30px;
         background: linear-gradient(
           168deg,
@@ -111,6 +110,7 @@
           // text-align: center;
           padding: 10px;
         }
+
         .back {
           font-size: 20px;
           font-weight: 400;

@@ -39,9 +39,9 @@ const About = () => {
           <div className='midTop grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1' data-aos='slide-up' data-aos-duration='1600' data-aos-delay='500' data-aos-easing='linear'>
 
             <div className='image'>
-              <img src="../../src/assets/about.png" width={600} alt="img" />
+              <img src="../../src/assets/target.png" alt="img" />
             </div>
-            <div>
+            <div className='cont'>
               <p className='title'> Our Mission</p>
               <p className='p'>Empower businesses through innovative and reliable technology solutions,
                 fostering growth and success in the digital era.
