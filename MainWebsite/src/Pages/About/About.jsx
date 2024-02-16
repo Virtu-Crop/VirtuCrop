@@ -36,7 +36,7 @@ const About = () => {
 
 
           </div>
-          <div className='midTop grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1' data-aos='zoom-in' data-aos-duration='1600' data-aos-delay='200' data-aos-easing='ease-in-out'>
+          <div className='midTop grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1' data-aos='slide-up' data-aos-duration='1600' data-aos-delay='500' data-aos-easing='linear'>
 
             <div className='image'>
               <img src="../../src/assets/about.png" width={600} alt="img" />
@@ -59,17 +59,18 @@ const About = () => {
             <div>
               <p className='title'>Meet our Captains</p>
             </div>
-            <div className='card grid md:grid-cols-2 sm:grid-cols-1 gap-44'>
+            <div className='mentor grid md:grid-cols-2 sm:grid-cols-1 gap-32'>
               <div className='ceo'>
-                <img src="../../src/assets/ceo.png" alt="" />
+                <img src="../../src/assets/ceo.png" width={250} alt="" />
                 <br />
                 Imdadullah J.D. <br />
                 CEO / Founder
 
+
               </div>
 
               <div className='coo'>
-                <img src="../../src/assets/coo.png" alt="" />
+                <img src="../../src/assets/coo.png" width={250} alt="" />
                 <br />
                 Jayesh B.N. <br />
                 COO / Co-Founder

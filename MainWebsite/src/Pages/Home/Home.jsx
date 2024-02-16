@@ -23,7 +23,7 @@ const Home = () => {
                                     SUCCESS
                                 </span>
 
-                                <button>Get in touch</button>
+                                <button className='button'>Get in touch</button>
                             </div>
                             <div className='image'>
                                 <img src="../../src/assets/figma-1.png" alt="image" width={650} />

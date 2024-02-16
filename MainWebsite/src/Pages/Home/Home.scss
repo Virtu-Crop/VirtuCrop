@@ -20,16 +20,11 @@
   //   z-index: -1;
   // }
   .sec1 {
-    padding-top: 4rem;
+    padding-top: 4%;
     position: relative;
     align-items: center;
     display: flex;
     justify-content: center;
-    background-image: url("../../assets/sec1back.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    background-attachment: local;
 
     .container1 {
       width: 100%;
@@ -60,8 +55,13 @@
             background-color: #004aad10;
             height: 60px;
             width: 150px;
+            font-weight: 600;
             letter-spacing: 3px;
-            border-radius: 10px;
+            border-radius: 5px;
+            &:hover {
+              background-color: #004aad;
+              color: aliceblue;
+            }
           }
         }
         .image {
@@ -115,8 +115,13 @@
               background-color: #004aad10;
               height: 60px;
               width: 250px;
+              font-weight: 600;
               letter-spacing: 3px;
-              border-radius: 10px;
+              border-radius: 5px;
+              &:hover {
+                background-color: #004aad;
+                color: aliceblue;
+              }
             }
           }
         }

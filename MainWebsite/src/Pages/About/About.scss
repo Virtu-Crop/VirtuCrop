@@ -113,29 +113,29 @@
         letter-spacing: 10px;
         // margin-bottom: 5%;
         margin-top: 30%;
-        :before {
-          content: "ss";
-          position: fixed; /* Fixed to viewport */
-          top: 50px; /* Align to top */
-          left: 0; /* Align to right */
-          width: 500px; /* Adjust width */
-          height: 500px; /* Adjust height */
-          background-color: #02020209; /* Set your desired color */
-          // border-radius: 50%; /* Make it a circle */
-          z-index: -1;
-        }
+        // :before {
+        //   content: "ss";
+        //   position: fixed; /* Fixed to viewport */
+        //   top: 50px; /* Align to top */
+        //   left: 0; /* Align to right */
+        //   width: 500px; /* Adjust width */
+        //   height: 500px; /* Adjust height */
+        //   background-color: #02020209; /* Set your desired color */
+        //   // border-radius: 50%; /* Make it a circle */
+        //   z-index: -1;
+        // }
       }
-      :before {
-        content: "";
-        position: fixed; /* Fixed to viewport */
-        top: 50px; /* Align to top */
-        left: -650px; /* Align to right */
-        width: 700px; /* Adjust width */
-        height: 650px; /* Adjust height */
-        background-color: #004aad09; /* Set your desired color */
-        border-radius: 50%; /* Make it a circle */
-        z-index: -1;
-      }
+      // :before {
+      //   content: "";
+      //   position: fixed; /* Fixed to viewport */
+      //   top: 50px; /* Align to top */
+      //   left: -650px; /* Align to right */
+      //   width: 700px; /* Adjust width */
+      //   height: 650px; /* Adjust height */
+      //   background-color: #004aad09; /* Set your desired color */
+      //   border-radius: 50%; /* Make it a circle */
+      //   z-index: -1;
+      // }
     }
     .midBottom {
       margin-top: 20%;
@@ -144,89 +144,21 @@
       align-items: center;
       justify-content: center;
       .title {
+        display: flex;
         color: #004aad;
         font-weight: 600;
         font-size: 50px;
         letter-spacing: 10px;
-
         // text-align: center;
       }
-      .card {
-        margin-top: 6%;
+      .mentor {
+        margin-top: 10%;
         text-align: center;
-        font-weight: 400;
-        margin-bottom: 40%;
         align-items: center;
         justify-content: center;
-
-        .ceo {
-          background-color: #ffffff00;
-          border-radius: 100px;
-          width: 200px;
-          height: 200px;
-          transform-style: preserve-3d;
-          transform: all 0.5s ease;
-
-          .front {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            backface-visibility: hidden;
-            color: #333;
-            font-size: 26px;
-            font-weight: 300;
-            margin-bottom: 10%;
-          }
-          // .back {
-          //   align-items: center;
-          //   display: flex;
-          //   margin-top: -150px;
-          //   flex-direction: column;
-          //   justify-content: center;
-          //   backface-visibility: hidden;
-          //   background: #ddb89200;
-          //   color: #000;
-          //   transform: rotateY(180deg);
-          //   font-size: 20px;
-          //   font-weight: 400;
-          //   letter-spacing: 1px;
-          // }
-        }
-
-        .coo {
-          background-color: #ffffff00;
-          width: 200px;
-          border-radius: 100px;
-          height: 200px;
-          transform-style: preserve-3d;
-          transform: all 0.5s ease;
-
-          .front {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            backface-visibility: hidden;
-            color: #333;
-            font-size: 26px;
-            font-weight: 700;
-          }
-          // .back {
-          //   align-items: center;
-          //   display: flex;
-          //   margin-top: -150px;
-          //   flex-direction: column;
-          //   justify-content: center;
-          //   backface-visibility: hidden;
-          //   background: #ddb89200;
-          //   color: #000;
-          //   transform: rotateY(180deg);
-          //   font-size: 20px;
-          //   font-weight: 400;
-          //   letter-spacing: 1px;
-          // }
-        }
+        margin-bottom: 20%;
+        font-size: large;
+        font-weight: 700;
       }
     }
     .bottom {
@@ -235,7 +167,7 @@
       font-size: 20px;
       font-weight: 400;
       letter-spacing: 1px;
-      margin-bottom: 30%;
+      margin-bottom: 20%;
     }
   }
 }
