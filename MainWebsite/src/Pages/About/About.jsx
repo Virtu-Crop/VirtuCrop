@@ -52,6 +52,7 @@ const About = () => {
                 deliver solutions that drive growth and efficiency. Our commitment
                 to quality and innovation makes us a trusted partner in your
                 technological journey.
+
               </p>
             </div>
           </div>
@@ -65,8 +66,6 @@ const About = () => {
                 <br />
                 Imdadullah J.D. <br />
                 CEO / Founder
-
-
               </div>
 
               <div className='coo'>
@@ -74,7 +73,6 @@ const About = () => {
                 <br />
                 Jayesh B.N. <br />
                 COO / Co-Founder
-
               </div>
             </div>
           </div>

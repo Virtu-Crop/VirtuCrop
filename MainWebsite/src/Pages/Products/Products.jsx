@@ -42,7 +42,7 @@ const Products = () => {
                 decentralized world.
                 <br />
                 <button>
-                  <a href="">
+                  <a style={{ pointerEvents: 'none' }} href="">
                     Coming Soon
                   </a>
                 </button>

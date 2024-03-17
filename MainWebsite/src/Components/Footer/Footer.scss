@@ -1,27 +1,23 @@
 .footer {
   background: linear-gradient(
     168deg,
-    rgba(220.45, 223.84, 254.36, 0.7) 100%,
+    rgba(0, 74, 173, 0.35) 0%,
+    rgba(224.78, 233.24, 255, 0.83) 0%,
+    rgba(202.09, 216.9, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.84) 54%,
     white 0%
   );
-  padding-top: 48px;
   border: 1px solid #cad9ff;
-  padding-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
-  // padding-top: 0;
-  // padding-bottom: 0;
   overflow: hidden;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 
   .main {
-    b {
-      font-size: 20px;
-      font-weight: 400;
-      letter-spacing: 1px;
-    }
     width: 100%;
     max-width: 1360px;
     margin-left: auto;
@@ -31,6 +27,11 @@
     grid-row-gap: 48px;
     flex-direction: column;
     display: flex;
+    b {
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
     .top {
       width: 100%;
       max-width: 1320px;

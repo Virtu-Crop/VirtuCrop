@@ -11,20 +11,12 @@
     height: auto;
     min-height: 100dvh;
     display: flex;
-    margin-top: 150px;
+    margin-top: 20%;
     // justify-content: center;
     align-items: center;
     overflow: hidden;
     animation: tran 2s;
 
-    p {
-      font-size: 20px;
-      font-weight: 400;
-      letter-spacing: 1px;
-      text-align: justify;
-      margin-left: 6%;
-      padding-right: 15px;
-    }
     button {
       height: 50px;
       margin-left: 50%;
@@ -44,7 +36,7 @@
       // border: 2px #004aad solid;
       background-color: rgba(240, 248, 255, 0.121);
       justify-content: center;
-      margin-top: 50px;
+      margin-top: 5%;
       backdrop-filter: blur(10px);
       align-items: center;
       border-radius: 5px;
@@ -58,8 +50,8 @@
       h1 {
         color: #004aad;
         margin-top: 0px;
-        font-size: 200%;
-        font-weight: 700;
+        font-weight: 900;
+        font-size: 45px;
         text-align: center;
       }
 
@@ -97,7 +89,24 @@
       }
     }
   }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-left: 6%;
+    padding-right: 15px;
+  }
   .image {
+    background: linear-gradient(
+      168deg,
+      rgba(202.09, 216.9, 255, 0.7) 0%,
+      rgba(224.78, 233.24, 255, 0.83) 0%,
+      rgba(0, 74, 173, 0.35) 0%,
+      rgba(255, 255, 255, 0.84) 54%,
+      white 0%
+    );
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -52,7 +52,9 @@ export default function Services() {
                                 </li>
                             </ul>
                         </div>
-                        <div className='first'></div>
+                        <div className='image'>
+                            <img src="../../src/assets/tech/sof.jpg" alt="img" />
+                        </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -77,7 +79,9 @@ export default function Services() {
                                 </li>
                             </ul>
                         </div>
-                        <div className='second'></div>
+                        <div className='image'>
+                            <img src="../../src/assets/tech/bcd.jpg" alt="img" />
+                        </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -96,14 +100,16 @@ export default function Services() {
                                     API Integration & Development.
                                 </li>
                                 <li>
-                                    Software Testing & QA
+                                    Software Testing & QA.
                                 </li>
                                 <li>
                                     Ongoing Maintenance & Support.
                                 </li>
                             </ul>
                         </div>
-                        <div className='third'></div>
+                        <div className='image'>
+                            <img src="../../src/assets/tech/csd.jpg" alt="img" />
+                        </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -111,9 +117,7 @@ export default function Services() {
                     sm:grid-cols-1 lg:grid-cols-2'>
                         <div className='content'>
                             <h1>UI/UX Development</h1>
-                            <ul style={{
-                                marginLeft: '-8%'
-                            }}>
+                            <ul >
                                 <li>
                                     User Interface (UI) Design.
                                 </li>
@@ -131,7 +135,9 @@ export default function Services() {
                                 </li>
                             </ul>
                         </div>
-                        <div className='fourth'></div>
+                        <div className='image'>
+                            <img src="../../src/assets/tech/8459331.jpg" alt="img" />
+                        </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -157,7 +163,9 @@ export default function Services() {
                                 </li>
                             </ul>
                         </div>
-                        <div className='fifth'></div>
+                        <div className='image'>
+                            <img src="../../src/assets/tech/mar.jpg" alt="img" />
+                        </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -165,9 +173,7 @@ export default function Services() {
                     sm:grid-cols-1 lg:grid-cols-2'>
                         <div className='content'>
                             <h1>Business Development</h1>
-                            <ul style={{
-                                marginLeft: '-15%'
-                            }}>
+                            <ul >
                                 <li>
                                     Growth Strategy Formulation.
                                 </li>
@@ -185,7 +191,9 @@ export default function Services() {
                                 </li>
                             </ul>
                         </div>
-                        <div className='sixth'></div>
+                        <div className='image'>
+                            <img src="../../src/assets/tech/bd.jpg" alt="img" />
+                        </div>
                     </div>
                 </SwiperSlide>
             </Swiper>

@@ -16,7 +16,7 @@
   flex-direction: column;
 
   .heading {
-    margin-top: 100px;
+    margin-top: 8%;
     width: 100%;
     font-size: 70px;
     text-align: center;
@@ -131,7 +131,7 @@
               // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
               // background: linear-gradient(145deg, #8da0ab, #cb93b0);
               // backdrop-filter: blur(10px);
-              border: 1px solid rgb(1, 1, 1);
+              // border: 1px solid rgb(1, 1, 1);
             }
           }
         }
@@ -154,5 +154,13 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    .heading {
+      margin-top: 15%;
+    }
   }
 }

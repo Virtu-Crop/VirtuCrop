@@ -1,20 +1,16 @@
 .services {
   height: 100dvh;
-  //   margin-top: 6%;
   width: 100%;
+
   .swiper {
     width: 100%;
     height: 100%;
   }
 
   .swiper-slide {
-    width: 100%;
-    height: 100%;
-    text-align: center;
+    text-align: justify;
     font-size: 18px;
     background: #fff;
-    /* Center slide text vertically */
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -34,60 +30,7 @@
 .grid {
   width: 100%;
   height: 100%;
-  .first {
-    width: 100%;
-    height: 100%;
-    background-image: url("../../assets/tech/sof.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-  .second {
-    width: 100%;
-    height: 100%;
-    background-image: url("../../assets/tech/bcd.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .third {
-    width: 100%;
-    height: 100%;
-    background-image: url("../../assets/tech/csd.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .fourth {
-    width: 100%;
-    height: 100%;
-    background-image: url("../../assets/tech/8459331.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .fifth {
-    width: 100%;
-    height: 100%;
-    background-image: url("../../assets/tech/mar.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .sixth {
-    width: 100%;
-    height: 100%;
-    background-image: url("../../assets/tech/bd.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
   .content {
-    // background-color: #004aad;
     height: 100%;
     width: 100%;
     font-size: 25px;
@@ -102,24 +45,34 @@
       font-weight: 700;
     }
     ul {
-      text-align: justify;
       list-style: disc;
+      p {
+        text-align: justify;
+      }
     }
   }
 }
 
-@media (max-width: 431px) {
-  .services {
-    height: 100dvh;
+@media (max-width: 800px) {
+  .swiper-slide {
     .grid {
-      margin-left: 10%;
-      h1 {
-      }
-      ul {
-        width: 95%;
-      }
+      margin-top: 10%;
       .content {
-        // word-spacing: 0px;
+        align-items: center;
+        justify-content: center;
+        h1 {
+          text-align: center;
+          line-height: 45px;
+          font-size: 30px;
+        }
+        ul {
+          margin-top: 5%;
+          font-size: 15px;
+        }
+      }
+      .image {
+        margin-top: -15%;
+        z-index: -1;
       }
     }
   }

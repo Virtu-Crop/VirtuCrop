@@ -1,0 +1,44 @@
+.privacy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+  padding: 0% 10% 10% 10%;
+
+  .content {
+    max-width: 210mm;
+    border: 0px solid black;
+    margin-top: 3%;
+    line-height: 40px;
+    word-spacing: 3px;
+    h1 {
+      font-size: 45px;
+      font-weight: 700;
+    }
+    b,
+    p {
+      font-size: 19px;
+      ul {
+        margin-left: 70px;
+        li {
+          list-style-type: disc;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 431px) {
+  .privacy {
+    padding: 0% 5% 5% 5%;
+    margin-top: 18%;
+    .content {
+      // line-height: 30px;
+      // word-spacing: 2px;
+      h {
+        font-size: 24px;
+        font-weight: 900;
+      }
+    }
+  }
+}

@@ -9,6 +9,8 @@ import Home from './Pages/Home/Home';
 import Services from './Pages/Services/Services';
 import Products from './Pages/Products/Products';
 import CurvyTriangleLoader from './Components/loader/CurvyTriangleLoader';
+import Privacy from './Components/Footer/Files/Privacy/Privacy';
+import Terms from './Components/Footer/Files/Terms/Terms';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,6 +36,8 @@ function App() {
               <Route path='/services' element={<Services />} />
               <Route path='/products' element={<Products />} />
               <Route path='/contact' element={<Contact />} />
+              <Route path='/privacy' element={<Privacy />} />
+              <Route path='/terms' element={<Terms />} />
             </Routes>
           </Router>
           <Footer />

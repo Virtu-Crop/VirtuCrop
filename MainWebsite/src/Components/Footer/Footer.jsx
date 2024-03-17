@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.scss';
-import { faFacebook, faInstagram, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -24,53 +24,53 @@ const Footer = () => {
                     </div>
                     <div className='mid grid lg:grid-cols-4 sm:grid-cols-2 gap-2'>
                         <div className='col1'>
-                        <div className='stack'>
-                            <b>Address</b>
-                            <div className='links'>
-                            <p>
-                                320, Gera's Imperium Rise,
-                                Hinjawadi Phase II,
-                                Pimpri-Chinchwad,
-                                Maharashtra 411057
-                            </p>
+                            <div className='stack'>
+                                <b>Address</b>
+                                <div className='links'>
+                                    <p>
+                                        320, Gera's Imperium Rise,
+                                        Hinjawadi Phase II,
+                                        Pimpri-Chinchwad,
+                                        Maharashtra 411057
+                                    </p>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div className='col2'>
-                        <div className='stack'>
-                            <b>Useful Link</b>
-                            <div className='links'>
-                            <a href="/">Home</a>
-                            <a href="/about">About</a>
-                            <a href="/services">Services</a>
-                            <a href="/products">Products</a>
-                            <a href="/contact">Contact</a>
+                            <div className='stack'>
+                                <b>Useful Link</b>
+                                <div className='links'>
+                                    <a href="/">Home</a>
+                                    <a href="/about">About</a>
+                                    <a href="/services">Services</a>
+                                    <a href="/products">Products</a>
+                                    <a href="/contact">Contact</a>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div className='col3'>
-                        <div className='stack'>
-                            <b>Our Products</b>
-                            <div className='links'>
-                            <a href="/" style={{pointerEvents:'none', color:'grey'}}>CoinXHub</a>
-                            <a target='_blank' href="https://evolveair.org/?tpclid=facebook.PAAaa4gzcbWHz407Si080yBilUEr9ZPbIlqT7Il_m0elZOUVZTYpEveHSEOLE">Evolveair</a>
-                            {/* <a href="/"></a> */}
-                            {/* <a href="/products">Products</a>
+                            <div className='stack'>
+                                <b>Our Products</b>
+                                <div className='links'>
+                                    <a href="/" style={{ pointerEvents: 'none', color: 'grey' }}>CoinXHub</a>
+                                    <a target='_blank' href="https://evolveair.org/?tpclid=facebook.PAAaa4gzcbWHz407Si080yBilUEr9ZPbIlqT7Il_m0elZOUVZTYpEveHSEOLE">Evolveair</a>
+                                    {/* <a href="/"></a> */}
+                                    {/* <a href="/products">Products</a>
                             <a href="/contact">Contact</a> */}
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div className='col4'>
-                        <div className='stack'>
-                            <b>Company</b>
-                            <div className='links'>
-                            <a href="/" style={{pointerEvents:'none', color:'grey'}}>Privacy & Policies</a>
-                            <a href="/about" style={{pointerEvents:'none', color:'grey'}}>Terms & Conditions</a>
-                            {/* <a href="/services">Services</a> */}
-                            {/* <a href="/products">Products</a> */}
-                            {/* <a href="/contact">Contact</a> */}
+                            <div className='stack'>
+                                <b>Company</b>
+                                <div className='links'>
+                                    <a href="/privacy" >Privacy & Policies</a>
+                                    <a href="/terms">Terms & Conditions</a>
+                                    {/* <a href="/services">Services</a> */}
+                                    {/* <a href="/products">Products</a> */}
+                                    {/* <a href="/contact">Contact</a> */}
+                                </div>
                             </div>
-                        </div>
                         </div>
                         {/* <div className='col5'>
                         <div className='stack'>

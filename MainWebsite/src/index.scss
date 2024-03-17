@@ -2,15 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-  background-attachment: scroll!important;
-
+html {
+  background-attachment: scroll !important;
 }
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  
 }
 
-
+@media (max-width: 768px) {
+  body {
+    margin-top: 1%;
+  }
+}

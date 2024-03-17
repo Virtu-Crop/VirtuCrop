@@ -1,31 +1,53 @@
-import React from 'react';
+import { React, useRef, useEffect, useState } from 'react';
 import './Home.scss';
+import AnimatedLetters from '../../Components/AnimatedLetters';
 import { Link } from 'react-router-dom';
-
 const Home = () => {
+    const [letterClass, setLetterClass] = useState('text-animate');
+    const nameArray = ['I', 'N', 'N', 'O', 'V', 'A', 'T', 'I', 'O', 'N']
+    const midArray = ['S', 'U', 'C', 'C', 'E', 'S', 'S']
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLetterClass('text-animate-hover');
+        }, 4000)
+    }, [])
+
     return (
         <>
-            <div className="home">
-                <section className='sec1'>
+            <div className="home" >
+                <section className='sec1' >
                     <div className='container1'>
-                        <div className='row grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+                        <div className='row grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2' >
                             <div className='text'>
                                 <span className='small'>
                                     SEEDING
                                 </span>
+
                                 <span className='bold'>
-                                    INNOVATION
+                                    <AnimatedLetters
+                                        letterClass={letterClass}
+                                        strArray={nameArray}
+                                        idx={50}
+                                    />
+                                    {/* INNOVATION */}
                                 </span>
                                 <span className='small'>
                                     HARVESTING
                                 </span>
                                 <span className='bold'>
-                                    SUCCESS
+                                    {/* SUCCESS */}
+                                    <AnimatedLetters
+                                        letterClass={letterClass}
+                                        strArray={midArray}
+                                        idx={50}
+                                    />
                                 </span>
-
-                                <button className='button'>Get in touch</button>
+                                <a className='button' href='/contact'>
+                                    Get in touch
+                                </a >
                             </div>
-                            <div className='image'>
+                            <div className='image' >
                                 <img src="../../src/assets/figma-1.png" alt="image" width={650} />
                             </div>
                         </div>
@@ -65,9 +87,10 @@ const Home = () => {
                                         Marketing Services
                                     </li>
                                     <br />
-                                    <Link to={'/services'}><button>Explore our services</button>
-                                    </Link>
                                 </ul>
+                                <a href='/services'>
+                                    Explore our services
+                                </a>
                             </div>
                         </div>
                     </div>
