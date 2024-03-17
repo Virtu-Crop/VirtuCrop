@@ -1,8 +1,8 @@
 import { React } from 'react';
 import './Navigation.scss';
+import logo from '../../assets/logo2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
 
 
 const Navigation = () => {
@@ -33,7 +33,7 @@ const Navigation = () => {
       <nav className='navbar'>
         <ul>
           {/* <Link></Link> */}
-          <li className='logo'><a href="/"><img src="./src/assets/logo2.png" /></a></li>
+          <li className='logo'><a href="/"><img src={logo} /></a></li>
           <li><a className='hideOnMoblie' href='/'>HOME</a></li>
           <li><a className='hideOnMoblie' href='/about'>ABOUT</a></li>
           <li><a className='hideOnMoblie' href='/services'>SERVICES</a></li>

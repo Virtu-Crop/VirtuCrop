@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.scss';
+import contact from '../../assets/c1.png';
 import axios from 'axios';
 import 'react-phone-number-input/style.css';
 
@@ -42,7 +43,7 @@ const Contact = () => {
         </div>
         <div className='image'>
           <div className='photo'>
-            <img src="../../src/assets/c1.png" width={350} style={{ borderRadius: '0%', marginBottom: '10px' }} alt="img" />
+            <img src={contact} width={350} style={{ borderRadius: '0%', marginBottom: '10px' }} alt="img" />
           </div>
         </div>
       </div>

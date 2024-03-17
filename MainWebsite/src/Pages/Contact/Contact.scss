@@ -33,7 +33,6 @@
       }
     }
     form {
-      // border: 2px #004aad solid;
       background-color: rgba(240, 248, 255, 0.121);
       justify-content: center;
       margin-top: 5%;
@@ -42,10 +41,6 @@
       border-radius: 5px;
       height: 420px;
       width: 90%;
-      // max-width: 450px;
-      // margin-left: 10px;
-      // min-width: 90%;
-      // display: none;
 
       h1 {
         color: #004aad;
@@ -57,7 +52,6 @@
 
       input {
         border: 2px #004aad solid;
-
         margin-top: 20px;
         width: 95%;
         height: 40px;
@@ -106,7 +100,6 @@
       rgba(255, 255, 255, 0.84) 54%,
       white 0%
     );
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,7 +1,9 @@
 import { React, useRef, useEffect, useState } from 'react';
 import './Home.scss';
+import idol from '../../assets/figma-1.png';
+import earth from '../../assets/earth.png';
+import laptop from '../../assets/laptop.png';
 import AnimatedLetters from '../../Components/AnimatedLetters';
-import { Link } from 'react-router-dom';
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const nameArray = ['I', 'N', 'N', 'O', 'V', 'A', 'T', 'I', 'O', 'N']
@@ -48,7 +50,7 @@ const Home = () => {
                                 </a >
                             </div>
                             <div className='image' >
-                                <img src="../../src/assets/figma-1.png" alt="image" width={650} />
+                                <img src={idol} alt="image" width={650} />
                             </div>
                         </div>
 
@@ -58,7 +60,7 @@ const Home = () => {
                     <div className='container2'>
                         <div className='row1 grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
                             <div className='earth'>
-                                <img src="../../src/assets/earth.png" width={500} alt="earth.jpg" />
+                                <img src={earth} width={500} alt="earth.jpg" />
                             </div>
                             <div className='text1'>
                                 <p className='up'>Discover a world of possibilities with
@@ -108,7 +110,7 @@ const Home = () => {
 
                             </div>
                             <div className='laptop'>
-                                <img src="../../src/assets/laptop.png" alt="earth.jpg" />
+                                <img src={laptop} alt="earth.jpg" />
                             </div>
                         </div>
                     </div>

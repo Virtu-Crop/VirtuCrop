@@ -1,5 +1,10 @@
 import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import image1 from '../../assets/tech/sof.jpg';
+import image2 from '../../assets/tech/bcd.jpg';
+import image3 from '../../assets/tech/csd.jpg';
+import image4 from '../../assets/tech/8459331.jpg';
+import image5 from '../../assets/tech/mar.jpg';
+import image6 from '../../assets/tech/bd.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -53,7 +58,7 @@ export default function Services() {
                             </ul>
                         </div>
                         <div className='image'>
-                            <img src="../../src/assets/tech/sof.jpg" alt="img" />
+                            <img src={image1} alt="img" />
                         </div>
                     </div>
                 </SwiperSlide>
@@ -80,7 +85,7 @@ export default function Services() {
                             </ul>
                         </div>
                         <div className='image'>
-                            <img src="../../src/assets/tech/bcd.jpg" alt="img" />
+                            <img src={image2} alt="img" />
                         </div>
                     </div>
                 </SwiperSlide>
@@ -108,7 +113,7 @@ export default function Services() {
                             </ul>
                         </div>
                         <div className='image'>
-                            <img src="../../src/assets/tech/csd.jpg" alt="img" />
+                            <img src={image3} alt="img" />
                         </div>
                     </div>
                 </SwiperSlide>
@@ -136,7 +141,7 @@ export default function Services() {
                             </ul>
                         </div>
                         <div className='image'>
-                            <img src="../../src/assets/tech/8459331.jpg" alt="img" />
+                            <img src={image4} alt="img" />
                         </div>
                     </div>
                 </SwiperSlide>
@@ -164,7 +169,7 @@ export default function Services() {
                             </ul>
                         </div>
                         <div className='image'>
-                            <img src="../../src/assets/tech/mar.jpg" alt="img" />
+                            <img src={image5} alt="img" />
                         </div>
                     </div>
                 </SwiperSlide>
@@ -192,7 +197,7 @@ export default function Services() {
                             </ul>
                         </div>
                         <div className='image'>
-                            <img src="../../src/assets/tech/bd.jpg" alt="img" />
+                            <img src={image6} alt="img" />
                         </div>
                     </div>
                 </SwiperSlide>
