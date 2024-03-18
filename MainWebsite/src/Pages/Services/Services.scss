@@ -53,7 +53,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .swiper-slide {
     .grid {
       margin-top: 10%;
@@ -63,7 +63,7 @@
         h1 {
           text-align: center;
           line-height: 45px;
-          font-size: 30px;
+          font-size: 45px;
         }
         ul {
           margin-top: 5%;
@@ -73,6 +73,17 @@
       .image {
         margin-top: -15%;
         z-index: -1;
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .swiper-slide {
+    .grid {
+      .content {
+        h1 {
+          font-size: 40px;
+        }
       }
     }
   }

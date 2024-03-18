@@ -92,8 +92,7 @@ export default function Services() {
                 <SwiperSlide>
                     <div className='grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-2'>
                         <div className='content'>
-                            <h1 >Custom Software
-                                Development</h1>
+                            <h1 >Custom Software Development</h1>
                             <ul>
                                 <li>
                                     Tailored Software Solutions.
@@ -149,7 +148,7 @@ export default function Services() {
                     <div className='grid grid-cols-2
                     sm:grid-cols-1 lg:grid-cols-2'>
                         <div className='content'>
-                            <h1>Marketing Services</h1>
+                            <h1>Branding Services</h1>
                             <ul>
                                 <li>
                                     Visual Brand Identity Design.
@@ -164,7 +163,7 @@ export default function Services() {
                                     Brand Guidelines Creation.
                                 </li>
                                 <li>
-                                    Brand Guidelines Creation.
+                                    Brand Refresh & Rebranding.
                                 </li>
                             </ul>
                         </div>

@@ -15,10 +15,8 @@ const Footer = () => {
                             <div className='logo'>
                                 <a href="/"><img src={logo} alt="logo" /></a>
                                 <div className='social flex-row'>
-                                    {/* <a target='_blank' href=""><FontAwesomeIcon icon={faFacebook} /></a> */}
                                     <a target='_blank' href="https://www.instagram.com/virtucrop/"><FontAwesomeIcon icon={faInstagram} /></a>
                                     <a target='_blank' href="https://www.linkedin.com/company/virtucrop-private-limited/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
-                                    {/* <a target='_blank' href=""><FontAwesomeIcon icon={faXTwitter} /></a> */}
                                 </div>
                             </div>
                         </div>
@@ -55,9 +53,6 @@ const Footer = () => {
                                 <div className='links'>
                                     <a href="/" style={{ pointerEvents: 'none', color: 'grey' }}>CoinXHub</a>
                                     <a target='_blank' href="https://evolveair.org/?tpclid=facebook.PAAaa4gzcbWHz407Si080yBilUEr9ZPbIlqT7Il_m0elZOUVZTYpEveHSEOLE">Evolveair</a>
-                                    {/* <a href="/"></a> */}
-                                    {/* <a href="/products">Products</a>
-                            <a href="/contact">Contact</a> */}
                                 </div>
                             </div>
                         </div>
@@ -67,30 +62,15 @@ const Footer = () => {
                                 <div className='links'>
                                     <a href="/privacy" >Privacy & Policies</a>
                                     <a href="/terms">Terms & Conditions</a>
-                                    {/* <a href="/services">Services</a> */}
-                                    {/* <a href="/products">Products</a> */}
-                                    {/* <a href="/contact">Contact</a> */}
                                 </div>
                             </div>
                         </div>
-                        {/* <div className='col5'>
-                        <div className='stack'>
-                            <b>Link</b>
-                            <div className='links'>
-                            <a href="/">Home</a>
-                            <a href="/about">About</a>
-                            <a href="/services">Services</a>
-                            <a href="/products">Products</a>
-                            <a href="/contact">Contact</a>
-                            </div>
-                        </div>
-                        </div> */}
+
                     </div>
                     <div className='bottom'>
                         <div className='main'>
                             <div className='container'>
                                 <div className='rights'>&copy; 2023 Your Company. All rights reserved.</div>
-                                {/* <div className='author'></div> */}
                             </div>
                         </div>
                     </div>

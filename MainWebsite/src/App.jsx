@@ -28,8 +28,8 @@ function App() {
         <CurvyTriangleLoader />
       ) : (
         <>
-          <Navigation />
           <Router>
+            <Navigation />
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/about' element={<About />} />
@@ -39,8 +39,8 @@ function App() {
               <Route path='/privacy' element={<Privacy />} />
               <Route path='/terms' element={<Terms />} />
             </Routes>
+            <Footer />
           </Router>
-          <Footer />
         </>
       )}
     </>
