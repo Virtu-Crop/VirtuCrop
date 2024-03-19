@@ -70,7 +70,7 @@ const Footer = () => {
                     <div className='bottom'>
                         <div className='main'>
                             <div className='container'>
-                                <div className='rights'>&copy; 2023 Your Company. All rights reserved.</div>
+                                <div className='rights'>&copy; 2023 Virtucrop Private Limited. All rights reserved.</div>
                             </div>
                         </div>
                     </div>
