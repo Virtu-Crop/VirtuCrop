@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import ceo from '../../assets/ceo.png';
-import coo from '../../assets/coo.png';
-import target from '../../assets/target.png';
+import ceo from '../../assets/ceo.webp';
+import coo from '../../assets/coo.webp';
+import target from '../../assets/target.webp';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './About.scss';
@@ -42,7 +42,7 @@ const About = () => {
           <div className='midTop grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1' data-aos='slide-up' data-aos-duration='1600' data-aos-delay='500' data-aos-easing='linear'>
 
             <div className='image'>
-              <img src={target} alt="img" />
+              <img src={target} alt="target" />
             </div>
             <div className='cont'>
               <p className='title'> Our Mission</p>
@@ -65,14 +65,14 @@ const About = () => {
             </div>
             <div className='mentor grid md:grid-cols-2 sm:grid-cols-1 gap-32'>
               <div className='ceo'>
-                <img src={ceo} width={250} alt="" />
+                <img src={ceo} width={250} alt="ceo" />
                 <br />
                 Imdadullah J.D. <br />
                 CEO / Founder
               </div>
 
               <div className='coo'>
-                <img src={coo} width={250} alt="" />
+                <img src={coo} width={250} alt="coo" />
                 <br />
                 Jayesh B.N. <br />
                 COO / Co-Founder

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.scss';
-import logo from '../../assets/logo2.png';
-import { faFacebook, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import logo from '../../assets/logo2.webp';
+import { faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className='top flex flex-row'>
                         <div className='col'>
                             <div className='logo'>
-                                <a href="/"><img src={logo} alt="logo" /></a>
+                                <a href="/"><img src={logo} alt="virtucrop_logo" /></a>
                                 <div className='social flex-row'>
                                     <a target='_blank' href="https://www.instagram.com/virtucrop/"><FontAwesomeIcon icon={faInstagram} /></a>
                                     <a target='_blank' href="https://www.linkedin.com/company/virtucrop-private-limited/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
@@ -65,8 +65,8 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
+                    <hr />
                     <div className='bottom'>
                         <div className='main'>
                             <div className='container'>

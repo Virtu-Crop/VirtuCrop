@@ -1,7 +1,7 @@
 import { React, useEffect } from 'react';
 import AOS from 'aos';
-import evo from '../../assets/evolve.png'
-import cxh from '../../assets/cxh.png';
+import evo from '../../assets/evolve.webp'
+import cxh from '../../assets/cxh.webp';
 import 'aos/dist/aos.css';
 import './Products.scss';
 
@@ -25,7 +25,7 @@ const Products = () => {
         <div className='cards'>
           <div className='grid grid-cols-1 gap-20'>
             <div className='card' data-aos='fade-up' data-aos-duration='1600' data-aos-delay='200' data-aos-easing='ease-in-out'>
-              <img className='front' src={evo} alt="evo" />
+              <img className='front' src={evo} alt="evolve" />
               <p className='back'>An innovative E-learning platform serving
                 both technical and non-technical realm along with super
                 amazing affiliate programs.
@@ -37,7 +37,7 @@ const Products = () => {
 
             </div>
             <div className='card1' data-aos='fade-up' data-aos-duration='1600' data-aos-delay='200' data-aos-easing='ease-in-out'>
-              <img className='front' src={cxh} alt="cxh" />
+              <img className='front' src={cxh} alt="coinxhub" />
               <p className='back'>Step into the future with CoinXHub. A seamless
                 blockchain  ecosystem designed for tomorrow's
                 decentralized world.

@@ -12,7 +12,7 @@
   overflow: inherit;
   font-size: 16px;
   font-weight: 400;
-  height: 50dvh;
+  height: 35%;
   letter-spacing: 1px;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -152,9 +152,8 @@
         }
       }
     }
+
     .bottom {
-      padding-top: 24px;
-      padding-bottom: 24px;
       width: 100%;
       max-width: 1320px;
       flex-wrap: wrap;
@@ -169,11 +168,9 @@
         padding-right: 20px;
         display: flex;
         width: 100%;
-        margin-top: 7%;
         .container {
           width: 100%;
           text-align: center;
-          // justify-content: space-between;
           align-items: center;
           display: flex;
           .rights {
@@ -182,10 +179,6 @@
             align-items: center;
             display: flex;
           }
-          // .author {
-          //   grid-column-gap: 24px;
-          //   display: flex;
-          // }
         }
       }
     }
